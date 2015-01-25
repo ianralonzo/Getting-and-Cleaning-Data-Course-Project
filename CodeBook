@@ -1,0 +1,30 @@
+First the working directories were set.  
+Then the train and test data were read into tables. 
+The files X_test.txt, y_test.txt, and subject_test.txt were merged into the test data table.
+Then the files X_train.txt, y_train.txt, subject_train.txt were merged into train data table. 
+
+Both the train and test data sets were merged to create one data set called Xymerged.
+
+From features.txt the indices corresponding to the variables describing mean values and standard deviations were 
+obtained. This was done by selecting variables which names contain "mean" or "std".  Only the measurements 
+on the mean and standard deviation (std) for each measurement were extracted from both train and test data tables 
+and combined into a single table (also including columns with corresponding subject ids and activity labels).
+
+A second, data set with the average of each variable for each activity and each subject was created. The rows were 
+sorted so that activities performed by each subject were in adjacent rows.  Each activity label was replaced with 
+the corresponding activity name from activity_labels.txt.
+
+The column namee were:
+
+Subject: .. range of values [1:30] .. id of a subject performing ther activity
+Activity: .. Name of activity performed
+The Rest of the columns corresponded to averaged variables describing the following mean/std measurements:
+- tGravityAcc-mean()-X 
+- tGravityAcc-mean()-Y 
+- tGravityAcc-mean()-Z 
+- tGravityAcc-std()-X 
+- tGravityAcc-std()-Y 
+- tGravityAcc-std()-Z
+
+The names of these variables are the same as in features.txt, but the values are averages of each variable for each 
+activity and each subject.

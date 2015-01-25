@@ -14,17 +14,18 @@ A second, data set with the average of each variable for each activity and each 
 sorted so that activities performed by each subject were in adjacent rows.  Each activity label was replaced with 
 the corresponding activity name from activity_labels.txt.
 
-The column namee were:
+The column names were:
 
-Subject: .. range of values [1:30] .. id of a subject performing ther activity
-Activity: .. Name of activity performed
-The Rest of the columns corresponded to averaged variables describing the following mean/std measurements:
-- tGravityAcc-mean()-X 
-- tGravityAcc-mean()-Y 
-- tGravityAcc-mean()-Z 
-- tGravityAcc-std()-X 
-- tGravityAcc-std()-Y 
-- tGravityAcc-std()-Z
+- Subject: .. range of values [1:30] .. id of a subject performing ther activity
 
-The names of these variables are the same as in features.txt, but the values are averages of each variable for each 
-activity and each subject.
+- Activity: .. Name of activity performed
+
+The remaining columns corresponded to averaged variables describing the following mean/std measurements:
+  - tGravityAcc-mean()-X 
+  - tGravityAcc-mean()-Y 
+  - tGravityAcc-mean()-Z 
+  - tGravityAcc-std()-X 
+  - tGravityAcc-std()-Y 
+  - tGravityAcc-std()-Z
+
+
